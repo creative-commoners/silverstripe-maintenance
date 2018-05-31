@@ -17,9 +17,9 @@
                 // Add warning message (set as data attribute on GridFieldRefreshButton) before
                 // first button row
                 $('.ss-gridfield-buttonrow').first().prepend(
-                    '<p class="message warning">' +
-                    this.getButton().data('message') +
-                    '</p>'
+                    '<p class="alert alert-warning">'
+                        + this.getButton().data('message')
+                    + '</p>'
                 );
                 this.poll();
             },
